@@ -18,6 +18,9 @@ exit;
  * [38, 1],[40, 1],[40, 4]
  */
 function coordinate($points, $y_downline = 1, $y_upline = 4){
+	if(empty($points)){ 
+		return false;
+	}
 	$y_axises = [];//Y值系初始化
 	$count = count($points);//统计用于生成Y轴匹配点组数量
 	//生成波峰和峰谷对应的Y值（两个为一组，偶数组为谷值, 奇数组为峰值）
