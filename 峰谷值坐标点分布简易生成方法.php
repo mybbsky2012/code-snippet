@@ -35,7 +35,7 @@ function coordinate($points, $y_downline = 1, $y_online = 4){
 	$sum = 0;
 	foreach($points as $k=>$v){
 		$sum = $sum + $v;//坐标点累积增加
-		if($k!=0){//踢除初始坐标值
+		if($k!=0){//踢除初始坐标值（根据需要是否不生成）
 			$x_axises[] = $sum;
 		}
 		$x_axises[] = $sum;
