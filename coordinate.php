@@ -3,8 +3,12 @@ $data = [2,3,2,4,7,1,4,7,8,2];
 $result = coordinate($data);
 print_r($result);
 exit;
+
 /**
  * (X轴距)图表坐标点换算(可用于echarts等常用不等距图表呈现)
+ * Author: Jack Liu
+ * Email: ceophp@163.com
+ * 
  * $y_downline Y轴谷值
  * $y_online   Y轴峰值
  * 备注：请在PHP版本不小于5.4.0版本下运行！
